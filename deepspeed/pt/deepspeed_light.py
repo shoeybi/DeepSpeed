@@ -9,7 +9,8 @@ import torch.distributed as dist
 from torch.nn.modules import Module
 from torch.distributed.distributed_c10d import _get_global_rank
 
-from tensorboardX import SummaryWriter
+#from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 from deepspeed.pt.deepspeed_timer import ThroughputTimer, SynchronizedWallClockTimer
 from deepspeed.pt.deepspeed_zero_optimizer import FP16_DeepSpeedZeroOptimizer
